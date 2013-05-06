@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Example</title>
+<script type="text/javascript" src="paragraphs.js"></script>
+<script type="text/javascript">
+var str = '\
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla malesuada ultrices. Integer ipsum augue, malesuada id feugiat non, volutpat vitae libero. Quisque lobortis venenatis sollicitudin. Nullam leo orci, elementum pellentesque pellentesque vel, mollis eget purus. Proin a hendrerit lorem. In varius risus ut lorem mattis ac cursus est dignissim. Sed sed enim mi, sit amet tincidunt dui. Nam egestas, erat luctus varius congue, magna nibh fringilla enim, sollicitudin tincidunt neque libero faucibus nisi. Phasellus at purus ut quam rhoncus aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eu dolor a nulla feugiat ullamcorper. Duis eleifend lectus vitae risus mattis nec pellentesque arcu molestie.\n\n\
+Ut volutpat sollicitudin ante sit amet aliquet. In neque nunc, tincidunt non aliquet id, suscipit in ipsum. Integer scelerisque sollicitudin lacus, sit amet rutrum lectus facilisis consequat. Sed semper justo in neque semper id volutpat felis porttitor. Phasellus tristique placerat mi sed ullamcorper. Nunc leo lectus, tristique non ultrices elementum, sagittis scelerisque justo. Praesent convallis iaculis turpis ut luctus. Donec auctor est quis mauris porta vel imperdiet sapien sollicitudin. In consequat, sem a vestibulum posuere, dolor ligula sollicitudin elit, eu pretium nisi nunc elementum erat. Integer eget enim eu magna pharetra ultricies. Proin laoreet, felis id imperdiet volutpat, nunc felis porta neque, ut pharetra nisl tortor at ipsum. Etiam mollis ultrices odio, non tempor elit lobortis eget.\n\n\
+<b>This is an iline tag outside a paragrah, on a new line</b> This is a suffix after an inline tag\n\n\
+<div>This is a block tag outside a paragrah</div> This is a suffix after a block tag\n\
+blablablba\n\
+hello there';
+var result = paragraphs(str);
+console.log(result);
+</script>
+</head>
+<body>
+</body>
