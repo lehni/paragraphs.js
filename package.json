@@ -1,6 +1,6 @@
 {
 	"name": "paragraphs",
-	"version": "0.5.0",
+	"version": "1.0.0",
 	"main": "paragraphs.js",
     "description": "Smart formating of paragraphs in HTML content.",
     "author": "Jürg Lehni <juerg@lehni.org> (http://lehni.org)",
