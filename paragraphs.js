@@ -1,5 +1,5 @@
 /*
- * paragraphs.js
+ * paragraphs.js - Smart formating of paragraphs in HTML content.
  *
  * Copyright (c) 2008 - 2013, Juerg Lehni
  * http://lehni.org/
@@ -103,13 +103,13 @@ return function paragraphs(str) {
 						if (closeIndex !== -1) {
 							if (openIndex !== -1) {
 								if (closeIndex < openIndex) {
-									// We're closing before opening again, reduce
+									// Closing before opening again, reduce
 									// nesting and see what is to be done after.
 									nesting--;
 									searchIndex = openIndex;
 								} else {
-									// Else we're opening a new one and closing it
-									// again, so nesting stays the same.
+									// Else we're opening a new one and closing
+									// it again, so nesting stays the same.
 									searchIndex = closeIndex + close.length;
 								}
 							} else {
@@ -122,22 +122,24 @@ return function paragraphs(str) {
 								var index = closeIndex + close.length;
 								if (index < line.length) {
 									// If there is more right after, put it back
-									// into lines and reduce i by 1, so this line
-									// will be iterated and processed again.
-									// console.log('Suffix', line.substring(index));
+									// into lines and reduce i by 1, so this
+									// line will be iterated and processed again
 									lines[i--] = line.substring(index);
+									// console.log('Suffix', lines[i + 1]);
 									// Replace the full line with what has been
 									// processed already.
-									out[out.length - 1] = line.substring(0, index);
+									out[out.length - 1] = line.substring(0,
+												index);
 									// Mark this as a so called suffix, which is
-									// a snippet of text that followed a block tag
-									// on the same line. We don't want these to
-									// be rendered in a new paragraph. Instead
-									// it should just follow the block tag and
-									// be terminated with a br tag. isSuffix handles
-									// that. This might not be a suffix thought but
-									// another block tag. The parsing of the line
-									// that's been put back will tell...
+									// a snippet of text that followed a block
+									// tag on the same line. We don't want these
+									// to be rendered in a new paragraph.
+									// Instead it should just follow the block
+									// tag and be terminated with a br tag.
+									// isSuffix handles that. This might not be
+									// a suffix thought but another block tag.
+									// The parsing of the line that's been put
+									// back will tell...
 									isSuffix = true;
 								}
 								break;
