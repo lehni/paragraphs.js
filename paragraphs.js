@@ -1,8 +1,8 @@
 /*
  * paragraphs.js - Smart formating of paragraphs in HTML content.
  *
- * Copyright (c) 2008 - 2013, Juerg Lehni
- * http://lehni.org/
+ * Copyright (c) 2008 - 2016, Juerg Lehni
+ * http://scratchdisk.com/
  *
  * Distributed under the MIT license. See LICENSE file for details.
  *

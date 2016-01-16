@@ -2,6 +2,6 @@
 
 Smart formating of paragraphs in HTML content.
 
-Copyright © 2008 - 2013, Jürg Lehni.
+Copyright © 2008 - 2016, Jürg Lehni.
 
-Documentation coming soon.
+Documentation coming one day, perhaps.

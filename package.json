@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "paragraphs.js",
     "description": "Smart formating of paragraphs in HTML content.",
-    "author": "Jürg Lehni <juerg@lehni.org> (http://lehni.org)",
+    "author": "Jürg Lehni <juerg@scratchdisk.com> (http://scratchdisk.com)",
 	"license": "MIT",
     "homepage": "https://github.com/lehni/paragraphs.js",
 	"repository": "git://github.com/lehni/paragraphs.js",
